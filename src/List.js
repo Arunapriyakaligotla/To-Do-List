@@ -33,6 +33,7 @@ function List() {
         updatedTask[index] = { ...updatedTask[index], completed: !updatedTask[index].completed };
         setTask(updatedTask);
     }
+
     function moveTaskup(index) {
         if (index > 0) {
             const updatedTask = [...task];
@@ -75,11 +76,22 @@ function List() {
             </div>
             <div>
                 <div className="w=100">
+                    
                     {sortedTasks.map((taskItem, index) => (
                         <div className="li" key={index}>
-                            <input type="checkbox" checked={taskItem.completed} onChange={() => toggleTaskCompletion(index)}
-                                className="checkbox" />
-                            <span className="text">{taskItem.name} <span className="duedate"> {taskItem.dueDate} <span className="priority"> {taskItem.priority}</span></span></span>
+                           <span className="text">{taskItem.name} </span>
+                           <span className="duedate"> {taskItem.dueDate} </span>                          
+                         <span className="priority"> {taskItem.priority}</span>
+                           <button
+  className={`cmplt-btn${taskItem.completed ? " clicked" : ""}`}
+  onClick={() => toggleTaskCompletion(index)}
+>
+  {taskItem.completed ? "Completed" : "Complete"}
+</button>
+
+                           
+                           
+                           
                             <button className="del-btn" onClick={() => deleteTask(index)}>
                                 Delete
                             </button>
@@ -96,7 +108,9 @@ function List() {
 
                             </div>
                         </div>
+                        
                     ))}
+                    
                 </div>
             </div>
         </div>
