@@ -11,7 +11,7 @@
     
    }
 body {
-    background-color: rgb(252, 144, 12);
+    background-color: darkslategrey;
 }
 
 
@@ -48,7 +48,7 @@ body {
 }
 .inputs{
     padding: 10px;
-    font-size: 15px;
+    font-size: 10px;
     width: 300px;
     border: 2px solid black;
     outline: none;
