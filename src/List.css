@@ -68,14 +68,17 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 800px;
+    width: 600px;
+    border: 1px solid lightgoldenrodyellow;
     border-radius: 5 px;
+    box-shadow: wheat;
 }
 
 .text{
     flex: 1;
     color: black;
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: medium;
     
 }
 .del-btn{
@@ -104,14 +107,14 @@ input{
     font-weight: 3px;
     font-size:small;
  color:blue;
- margin-left: 40px;
- margin-right: 40px;
+ margin-left: 20px;
+ margin-right: 20px;
 
 }
 .duedate{
     color: red;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: small;
 }
 
