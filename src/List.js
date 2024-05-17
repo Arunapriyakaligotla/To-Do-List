@@ -76,22 +76,22 @@ function List() {
             </div>
             <div>
                 <div className="w=100">
-                    
+
                     {sortedTasks.map((taskItem, index) => (
                         <div className="li" key={index}>
-                           <span className="text">{taskItem.name} </span>
-                           <span className="duedate"> {taskItem.dueDate} </span>                          
-                         <span className="priority"> {taskItem.priority}</span>
-                           <button
-  className={`cmplt-btn${taskItem.completed ? " clicked" : ""}`}
-  onClick={() => toggleTaskCompletion(index)}
->
-  {taskItem.completed ? "Completed" : "Complete"}
-</button>
+                            <span className="text">{taskItem.name} </span>
+                            <span className="duedate"> {taskItem.dueDate} </span>
+                            <span className="priority"> {taskItem.priority}</span>
+                            <button
+                                className={`cmplt-btn${taskItem.completed ? " clicked" : ""}`}
+                                onClick={() => toggleTaskCompletion(index)}
+                            >
+                                {taskItem.completed ? "Completed" : "Complete"}
+                            </button>
 
-                           
-                           
-                           
+
+
+
                             <button className="del-btn" onClick={() => deleteTask(index)}>
                                 Delete
                             </button>
@@ -108,9 +108,9 @@ function List() {
 
                             </div>
                         </div>
-                        
+
                     ))}
-                    
+
                 </div>
             </div>
         </div>

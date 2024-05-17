@@ -11,7 +11,7 @@
     
    }
 body {
-    background-color: darkslategrey;
+    background-color: black;
 }
 
 
@@ -24,6 +24,7 @@ body {
     margin-left: 30px;
     padding: 8px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .ad-btn:hover{
     background-color: rgb(115, 248, 115);
@@ -40,6 +41,7 @@ body {
     margin-left: 10px;
     width: 25px;
     border-radius: 5px;
+    cursor: pointer;
     
 }
 .mve-btn:hover{
@@ -48,7 +50,7 @@ body {
 }
 .inputs{
     padding: 10px;
-    font-size: 10px;
+    font-size: 20px;
     width: 300px;
     border: 2px solid black;
     outline: none;
@@ -84,7 +86,7 @@ body {
 }
 input{
   background-color: white;
-  padding: 50 30;
+  padding: 50px 30px;
 }
 .cmplt-btn{
   border-radius: 5px;
